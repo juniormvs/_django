@@ -5,11 +5,14 @@ from django.shortcuts import render
 # Create your views here.
 def home(request):
     print('home')
+
+    context = {
+                'text': 'Olá Home -> Ainda continua azul'
+              }
+
     return render(
         request,
-        'home/index.html'
+        'home/index.html',
+        context
+
         )
-    # return render(
-    #     request,
-    #     'global/base.html',
-    #     )
