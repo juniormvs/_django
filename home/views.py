@@ -4,8 +4,12 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    print('home/index.html')
+    print('home')
     return render(
         request,
         'home/index.html'
         )
+    # return render(
+    #     request,
+    #     'global/base.html',
+    #     )
