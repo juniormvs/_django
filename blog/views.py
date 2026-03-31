@@ -20,7 +20,7 @@ def exemplo(request):
 
     context = {
                 'text': 'Olá Blog Exemplo -> Ainda continua azul',
-                'title': 'Esta é uma página de exemplo ',
+                'title': 'Esta é uma página de exemplo -',
               }
     
     return render(

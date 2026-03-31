@@ -23,6 +23,7 @@ from . import views # importação relativa
 # HTTP Request <-> HTTP Response
 # MVT - model view template (MVC - model view controll)
 
+app_name = 'home'
 
 # EXEMPLO:
 
@@ -32,5 +33,5 @@ from . import views # importação relativa
 
 #http://analysisdata.cloud/
 urlpatterns = [
-    path('', views.home),
+    path('', views.home, name='home'),
 ]

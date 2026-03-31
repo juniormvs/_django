@@ -30,10 +30,12 @@ from . import views # importação relativa
 
 #http://analysisdata.cloud/
 
+app_name = 'blog'
+
 
 urlpatterns = [
     # blog/
-    path('', views.blog),
+    path('', views.blog, name='blog'),
     # blog/exemplo/
-    path('exemplo/', views.exemplo)
+    path('exemplo/', views.exemplo, name='exemplo')
 ]
