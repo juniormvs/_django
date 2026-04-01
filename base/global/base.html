@@ -6,10 +6,10 @@
  
 
 
-<main class='posts'>
-    {% include "global/partials/postblock.html" %}
-    {% include "global/partials/postblock.html" %}
-    {% include "global/partials/postblock.html" %}
+<main class='content'>
+    <h1>{% block posts %}{% endblock posts %}</h1>
+    <h1>{% block home %}{% endblock home %}</h1>
+    
 </main>
 
 </body>
