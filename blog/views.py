@@ -2,7 +2,7 @@ from typing import Any
 
 from .data import posts
 from django.shortcuts import render
-from django.http import HttpRequest
+from django.http import HttpRequest, Http404
 
 # Create your views here.
 
@@ -30,6 +30,8 @@ def post(request:HttpRequest, post_id: int):
         if post['id'] == post_id:
             found_post = post
             break
+    if found_post is None:
+        raise Http404('Post não existe.')
 
     context = {
                 # 'text': 'Olá Blog',
