@@ -40,7 +40,7 @@ urlpatterns = [
     # blog/
     path('', views.blog, name='blog'),
     # post/
-    path('post/<int:id>', views.post, name='post'),
+    path('post/<int:id>/', views.post, name='post'),
     # blog/exemplo/
     path('exemplo/', views.exemplo, name='exemplo')
 ]
