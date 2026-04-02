@@ -123,6 +123,8 @@ STATICFILES_DIRS = [
     BASE_DIR / 'base' / 'static'
     # BASE_DIR  / 'static'
 ]
+STATIC_ROOT = BASE_DIR / 'static_files'
+
 
 
 # Default primary key field type
