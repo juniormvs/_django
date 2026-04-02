@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+a {
+  color: #0078e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -28,6 +37,38 @@ body {
   background: #fff;
   padding: 1.5rem;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 10%);
+}
+
+/* Menu fixo no topo */
+.menu {
+  background: #000;       /* fundo preto */
+  padding: 0 1.5rem;
+  position: sticky;       /* fixa no topo */
+  top: 0;
+  z-index: 1000;
+  width: 100%;            /* ocupa toda a largura */
+}
+
+.menu__links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__links li {
+  margin: 0;
+}
+
+.menu__links a {
+  display: block;
+  color: #fff;            /* links brancos */
+  padding: 1.5rem;
+  transition: color 0.3s;
+}
+
+.menu__links a:hover {
+  color: #0078e8;         /* azul no hover */
 }
 
 @media (min-width: 600px) {
