@@ -30,12 +30,17 @@ from . import views # importação relativa
 
 #http://analysisdata.cloud/
 
+
+#Namespace
 app_name = 'blog'
 
 
+# https://docs.djangoproject.com/pt-br/5.0//topics/http/urls/
 urlpatterns = [
     # blog/
     path('', views.blog, name='blog'),
+    # post/
+    path('post/<int:id>', views.post, name='post'),
     # blog/exemplo/
     path('exemplo/', views.exemplo, name='exemplo')
 ]
